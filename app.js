@@ -32,7 +32,17 @@ console.log( 'all numbers are under 25: ${isUNder25}');
 const totalDistance = 1500; // miles
 const fuelEffienciency = {
     55: 30, //miles per gallon
-    60:28,
+    60: 28,
     75: 23
 };
 
+const fuelBudget = 175; // dollars
+const costPerGallon = 3; // dollars
+
+// Calculate fuel needed for each speed
+const fuelNeeded ={};
+for (const speed in fuelEffienciency) {
+    fuelNeeded[speed] = totalDistance / fuelEffienciency[speed];
+
+
+}
