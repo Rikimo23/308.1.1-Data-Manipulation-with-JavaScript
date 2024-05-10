@@ -52,4 +52,22 @@ for (const speed in fuelNeeded) {
     isBudgetEnough[speed] = fuelNeeded[speed]* costPergallon <= fuelBudget;
 }
 
+// calculate trip duration at each speed
+const tripDuration = {};
+for (const speed in fuelEffienciency) {
+    tripDuration [speed] = totalDistance / speed;
+
+}
+
+// Compare results for different speeds 
+for (const speed in fuelEffienciency){
+    console.log('At ${speed} mph:');
+    console.log('Fuel needed: ${fuelNeeded[speed]} gallons');
+    console.log(`Is budget enough? ${isBudgetEnough[speed]}`);
+    console.log(`Trip duration: ${tripDuration[speed]} hours`);
+
+
+
+
+}
 
