@@ -23,3 +23,16 @@ console.log ('Result of aithmetic chain: ${result}');
 const isUnder25 = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25;
 console.log( 'all numbers are under 25: ${isUNder25}');
 
+
+
+
+// Part 2: Practical Math
+
+//Given data
+const totalDistance = 1500; // miles
+const fuelEffienciency = {
+    55: 30, //miles per gallon
+    60:28,
+    75: 23
+};
+
