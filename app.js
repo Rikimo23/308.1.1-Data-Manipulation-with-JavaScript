@@ -19,3 +19,7 @@ console.log('First number is larger than the last: ${firstLargerThanLast}');
 const resut = ((n2 - n1) * n3) % n4;
 console.log ('Result of aithmetic chain: ${result}');
 
+// Change the logic of is Over25
+const isUnder25 = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25;
+console.log( 'all numbers are under 25: ${isUNder25}');
+
