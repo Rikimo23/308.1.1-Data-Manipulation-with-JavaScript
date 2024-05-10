@@ -43,6 +43,13 @@ const costPerGallon = 3; // dollars
 const fuelNeeded ={};
 for (const speed in fuelEffienciency) {
     fuelNeeded[speed] = totalDistance / fuelEffienciency[speed];
-
-
 }
+
+
+//Check if budget is enough to cover fuel expense
+const isBudgetEnough = {};
+for (const speed in fuelNeeded) {
+    isBudgetEnough[speed] = fuelNeeded[speed]* costPergallon <= fuelBudget;
+}
+
+
