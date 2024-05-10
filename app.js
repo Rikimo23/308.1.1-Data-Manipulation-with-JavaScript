@@ -15,3 +15,7 @@ console.log( 'All number are divisbkle by 5: ${all Divisbleby5}');
 const firstLargerThanLast = n1 > n4;
 console.log('First number is larger than the last: ${firstLargerThanLast}');
 
+// arthmetic chain
+const resut = ((n2 - n1) * n3) % n4;
+console.log ('Result of aithmetic chain: ${result}');
+
